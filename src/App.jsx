@@ -70,7 +70,7 @@ function App() {
   return (
     <>
     <Navbar/>
-    <div className=" container mx-auto my-2 p-5 bg-violet-200 rounded-xl min-h-[50vh] text-center w-fit lg:min-h-[80vh]">
+    <div className=" container mx-auto my-2 p-5 bg-violet-200 rounded-xl min-h-[50vh] text-center w-fit">
     <h1 className="font-bold text-xl m-5">iTODO - Manage your tasks</h1>
     <div className="my-5 text-center">
       <h2 className="text-lg font-bold">Add a Todo</h2>
@@ -85,7 +85,7 @@ function App() {
     {todos.length ===0 && <div className=" m-10">No Todos to Display</div> }
     {todos.map(item=>{
 
-    return (showFinished || !item.isCompleted) &&<div key={item.id} className="todo flex justify-between mb-4">
+    return (showFinished || !item.isCompleted) &&<div key={item.id} className="todo flex justify-between m-4">
         <div className="flex gap-5">
         <input name={item.id} onChange={handleCheckbox} type="checkbox" checked={todo.isCompleted}  id="" />
         <div className={item.isCompleted?"line-through my-3 cursor-pointer":"my-3 min-w-fit cursor-pointer "}>{item.todo}</div>
