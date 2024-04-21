@@ -6,8 +6,8 @@ const Navbar = () => {
     <div className='logo'>
         <span className='font-bold text-xl mx-8'>iTODO</span>
     </div>
-        <ul className='flex gap-8 mx-9'>
-            <li className=' cursor-pointer hover:font-bold transition-all duration-50'>Home</li>
+        <ul className='flex gap-8 mx-9 justify-between'>
+            <li className=' cursor-pointer hover:font-bold transition-all duration-50 mx-2'>Home</li>
             <li className=' cursor-pointer hover:font-bold transition-all duration-50'>Your Tasks</li>
         </ul>
     </nav>
